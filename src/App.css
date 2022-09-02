@@ -1,0 +1,177 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: #F3BF99; 
+  --second-color: #5093E2;
+  --third-color: #918E9B;
+  --title-color: #fff;
+  --text-color: #fff;
+  --card-color: #1A1B21;
+  --footer-color: #161619;
+  --container-color: #1A1B21;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Inter', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  --smallest-font-size: .7rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+}
+
+/* Responsive typography */
+@media screen and (min-width: 1024px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  /* transition: .3s;*/ /* For animation dark mode */
+}
+
+h1, h2, h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  font-family: var(--body-font);
+  outline: none;
+  border: none;
+}
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*========== 
+    Color changes in some parts of 
+    the website, in dark theme 
+==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+.container {
+  max-width: 1024px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* INFO SECTION */
+
+.card {
+    background: var(--card-color);
+    max-width: 317px;
+    margin: 5rem auto;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.card__img {
+    margin-bottom: 1rem;
+}
+
+.card__title {
+  font-size: var(--h2-font-size);
+  /* margin-bottom: .3rem; */
+}
+
+.card__subtitle {
+  display: block;
+  font-size: var(--smaller-font-size);
+  color: var(--first-color);
+  margin-bottom: .5rem;
+}
+
+.card__website{
+    font-size: var(--smallest-font-size);
+    margin-bottom: 1rem;
+}
+
+.card__title, .card__subtitle, .card__website {
+    text-align: center;
+}
+
+.card__buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    column-gap: 1.5rem;
+}
+
+.button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .4rem .6rem;
+    border-radius: .35rem;
+    width: 110px;
+    column-gap: .4rem;
+    font-size: var(--smaller-font-size);
+    font-weight: var(--font-semi-bold);
+}
+
+button i {
+    font-size: 1rem;
+}
+
+.email__button {
+    background-color: #fff;
+}
+
+.linkedin__button {
+    background-color: var(--second-color);
+    color: #fff;
+}
