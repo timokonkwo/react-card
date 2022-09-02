@@ -38,7 +38,6 @@ html {
 body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
-  background-color: var(--body-color);
   color: var(--text-color);
 }
 
@@ -72,8 +71,11 @@ button {
     background: var(--card-color);
     max-width: 317px;
     margin: 5rem auto;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
+    border-top-left-radius: .9rem;
+    border-top-right-radius: .9rem;
+    border-bottom-left-radius: .9rem;
+    border-bottom-right-radius: .9rem;
+    overflow: hidden;
 }
 
 .card__img {
