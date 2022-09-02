@@ -146,8 +146,8 @@ button {
 
 .card__buttons {
     display: flex;
-    justify-content: center;
-    margin-bottom: 3rem;
+    justify-content: space-between;
+    margin-bottom: 2rem;
     column-gap: 1.5rem;
 }
 
@@ -174,4 +174,12 @@ button i {
 .linkedin__button {
     background-color: var(--second-color);
     color: #fff;
+}
+
+
+.description {
+    font-size: var(--smallest-font-size);
+    color: #DCDCDC;
+    line-height: 1.23rem;
+    margin-bottom: 1rem;
 }
